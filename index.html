@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harvard Art Museums Galleries</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1 class="title">Harvard Art Museums</h1>
+        <div id="all-galleries">
+            <h2 id="gal">Galleries</h2>
+            <ul style="list-style-type:none" id="galleries">
+            </ul>
+        </div>
+        <div id="all-objects" style="display:none">
+            <h2 id="all-objects-title"></h2>
+            <ul id="objects-list">
+            </ul>
+        </div>
+        <div id="object-details" style="display:none">
+            <h2 id="details-title"></h2>
+
+            <table id="table" style="width:100%">
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Provenance</th>
+                <th>Accession Year</th>
+                <th>Image</th>
+              </tr>
+              <tr id="actual-details">
+              </tr>
+            </table>
+        </div>
+        <br>
+        <button id="back" style="display:block" onclick="goBack()">Go Back</button>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+
+    </body>
+</html>
